@@ -4,7 +4,7 @@ metadata:
   labels:
     k8s-app: cloud-native
   name: cloud-native
-  namespace: monitor
+  namespace: monitoring
 spec:
   endpoints:
     - interval: 30s
