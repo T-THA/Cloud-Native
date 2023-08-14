@@ -8,7 +8,7 @@ metadata:
 spec:
   endpoints:
     - interval: 30s
-      port: tcp
+      port: tcp8080
       path: /actuator/prometheus
       scheme: 'http'
   selector:
