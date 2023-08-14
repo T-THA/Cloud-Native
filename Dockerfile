@@ -2,7 +2,7 @@ FROM openjdk:17
 
 LABEL authors="nju17"
 
-COPY ./target/Cloud-Native-0.0.1-SNAPSHOT.jar /app/Cloud-Native.jar
+COPY ./release/Cloud-Native-0.0.1-SNAPSHOT.jar /app/Cloud-Native.jar
 
 WORKDIR /app
 
