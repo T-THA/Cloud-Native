@@ -12,13 +12,6 @@ spec:
     rollingUpdate:
       maxSurge: 25%
       maxUnavailable: 25%
-  containers: containerName #需要名字
-  containerName: #需要名字
-    name: cpu
-    container: serverName
-    target:
-      type: Utilization
-      averageUtilization: 60
   selector:
     matchLabels:
       app: serverName #需要名字
