@@ -26,7 +26,7 @@ spec:
         app: cloud-native #需要名字
     spec:
       containers:
-        - image: harbor.edu.cn/nju17/cloud-native:latest
+        - image: harbor.edu.cn/nju17/cloud-native:{VERSION}
           name: cloud-native #需要名字
 ---
 apiVersion: v1
