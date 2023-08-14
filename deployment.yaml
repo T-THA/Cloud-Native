@@ -33,7 +33,7 @@ spec:
         app: serverName #需要名字
     spec:
       containers:
-        - image: harbor.edu.cn/nju17/hello-server:{VERSION}
+        - image: harbor.edu.cn/nju17/serverName:{VERSION}
           name: serverName #需要名字
 ---
 apiVersion: v1
