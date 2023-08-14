@@ -2,8 +2,8 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    k8s-app: serverName
-  name: serverName
+    k8s-app: cloud-native
+  name: cloud-native
   namespace: monitoring
 spec:
   endpoints:
@@ -13,7 +13,7 @@ spec:
       scheme: 'http'
   selector:
     matchLabels:
-      app: serverName
+      app: cloud-native
   namespaceSelector:
     matchNames:
       - nju17
