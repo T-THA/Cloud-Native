@@ -7,13 +7,13 @@ metadata:
   namespace: monitoring
 spec:
   endpoints:
-    - interval: 30s
-      port: tcp8080
+    - interval: 30s #监控数据抓取间隔设为30s
+      port: tcp8080 #端口名
       path: /actuator/prometheus
-      scheme: 'http'
+      scheme: 'http' #接口协议
   selector:
     matchLabels:
-      app: cloud-native
+      app: cloud-native #监控目标Service的标签
   namespaceSelector:
     matchNames:
       - nju17
